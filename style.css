@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    /* background-color: skyblue; */
+    display: flex;
+    align-items: flex-end;
+    padding: 5% 10% 0% 10%;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left h1{
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 120px;
+    color: #353535;
+}
+
+.left span{
+    color: #925B17;
+}
+.bottom-left{
+    height: 45%;
+    /* background-color: aquamarine; */
+}
+
+.color{
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 12px;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 50px;
+    
+}
+
+.color h5{
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.color1{
+    width: 20px;
+    height: 20px;
+    background-color: bisque;
+    border: 1px solid #656565;
+    border-radius: 50%;
+}
+
+.color2{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(146, 91, 23);
+    border: 1px solid #656565;
+    border-radius: 50%;
+}
+
+.bottom-left h2 {
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.bottom-left p{
+    width: 70%;
+    margin-top: 14px;
+    text-align: justify;
+    color: #454545;
+    line-height: 22px;
+}
+
+.right{
+    height: 94%;
+    width: 35%;
+    position: relative;
+}
+
+#rotated{
+    position: absolute;
+    rotate: -90deg;
+    left: -22%;
+    bottom: 40%;
+    font-size: 20px;
+    color: #454545;
+    font-weight: 600;
+}
+
+.right-top{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.right-top h4{
+    font-size: 24px;
+}
+
+.right-top i{
+    padding-right: 3px;
+    color: rgb(73, 73, 73);
+}
+
+.right-top h5{
+    font-size: 16px;
+}
+
+.right img {
+    height: calc(100% - 40px);
+    width: 100%;
+    object-fit: cover;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:15%;
+    right: -15%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #925B17;
+}
+
+.circle h4{
+    color: white;
+    font-weight: 500;
+}
+
+.button{
+    display:none;
+}
+
+
+
+@media (max-width:600px){
+
+    .main{
+        height: 150%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 50px;
+    }
+    .left{
+        width: 100%;
+        height: 200%;
+        padding: 5%;
+    }
+
+    .left h1{
+        margin-top: 70px;
+        width: 100%;
+        height: 50%;
+        font-size: 14vw;
+        font-weight: 500;
+        line-height: 14vw;
+        color: #353535;
+    }
+
+    .bottom-left{
+        height: 50%;
+    }
+
+    .bottom-left p{
+        width: 100%;
+        font-size: 16px;
+        text-align: justify;
+        color: #454545;
+        line-height: 16px;
+        
+    }
+
+    .right{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 5% 0 5%;
+    }
+
+    .right img {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .right-top{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #rotated{
+        position: absolute;
+        rotate: -90deg;
+        bottom: 64%;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+
+    .circle{
+        display: none;
+    }
+
+    .button{
+        display: block;
+        width: 100%;
+        height: 40px;
+        margin-top: 6px;
+        padding-inline: 20px;
+        background-color: #925B17;
+    }
+
+    .button{
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        border-radius: 2px;
+    }
+}
